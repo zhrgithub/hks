@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<view class="inputsearch">
+  <input placeholder="热门搜索" confirm-type="search" bindinput="inputoperation" value="{{inputsearch}}" />
+  <button  class="close" hidden="{{isclose}}" bindtap="resetinput">清空</button>
+  <button formType="submit" class="searchsubmit " hidden="{{searchsubmit?false:false}}" bindtap="searchbegin">搜索</button>
+  <!-- <button formType="reset" class="searchreset" hidden="{{searchreset?true:false}}" bindtap="cancelsearch">取消</button> -->
+  <!--</form>-->
+</view>
+<!--历史记录-->
+<view class="history message" hidden="{{historydatashow?false:true}}">
+  <view class="title">历史搜索</view>
+  <view class="operation" bindtap="removeall">清除</view>
+  <text class="list" bindtap="searchbegin" wx:for="{{historydata}}">{{item}}</text>
+</view>
+<!--热门搜索-->
+<view class="hotsearch message">
+  <view class="title">热门搜索</view>
+  <view class="operation" bindtap="changeother">换一批</view>
+  <text class="list" bindtap="searchbegin" wx:for="{{falg ? hotsearch1 : hotsearch2}}">{{item.message}}
+  </text>
+</view>
+<!-- 展示5个商品信息 -->
+<view class="shop" wx:for="{{shopList}}" wx:key="id" bindtap="gotodetail">
+    <image class='shop-img' src="{{item.images[0]}}"></image>
+    <view class='shop-info'>
+        <text class='shop-title ell'>{{item.name}}</text>
+        <text class='shop-tel'>电话：{{item.phone}}</text>
+        <text class='shop-address'>地址：{{item.address}}</text>
+        <text class='shop-time'>营业时间：{{item.businessHours}}</text>
+    </view>
+    <view class='shop-star'>
+        <view class='star-after'>★★★★★</view>
+        <view class='star-before' style='width:{{item.score}}%'>★★★★★</view>
+    </view>
+</view>
+<!--搜索结果-->
+<view class="searchresult" hidden="{{searchresult?false:true}}">
+  <view class="result" wx:for="{{searchResult}}" bindtap="gotodetail">
+    {{item.result}}
+  </view>
+</view>

@@ -1,0 +1,82 @@
+/**app.wxss**/
+.container {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 125rpx 0;
+  box-sizing: border-box;
+} 
+
+
+/*表单模版*/
+.form-wx-style{
+	width: 100%;
+	font-size: 35rpx;
+}
+.form-wx-style .line-box{
+	width: 95%;
+	height: 150rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.form-wx-style .line-box .text{
+	width: 25%;
+	color: #555;
+}
+.form-wx-style .line-box .value{
+	width: 75%;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15rpx;
+	padding-top: 15rpx;
+	color: #888;
+}
+.form-wx-style .line-box .value .placeholder-style{
+	color: #ccc;
+	font-size: 35rpx;
+}
+
+.form-wx-style .box{
+	width: 95%;
+	height: 200rpx;
+	display: flex;
+	align-items: flex-start;
+	border-bottom: 1px solid #eee;
+	margin: auto;
+}
+.form-wx-style .box .text{
+	color: #555;
+	width: 25%;
+}
+.form-wx-style .box .value{
+	color: #888;
+	width: 75%;
+	height: 100%;
+}
+.form-wx-style .box .value textarea{
+	width: 100%;
+	height: 95%;
+	padding-top: 5rpx;
+	padding-bottom: 5rpx;
+}
+.form-wx-style .box .value .placeholder-style{
+	color: #ccc;
+	font-size: 35rpx;
+}
+
+.star-after{
+  color: #e2e2e2;
+}
+
+.star-before{
+  color:#f19e38;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  overflow: hidden;
+}
+

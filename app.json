@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/classify/classify",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/goods-search/goods-search",
+    "pages/storeInfo/storeInfo"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#007cfd",
+    "navigationBarTitleText": "hks",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#418DEB",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "主页",
+          "iconPath": "images/icon/home-off.png",
+          "selectedIconPath": "images/icon/home-on.png"
+        },
+        {
+          "pagePath": "pages/classify/classify",
+          "iconPath": "images/icon/search-off.png",
+          "selectedIconPath": "images/icon/search-on.png",
+          "text": "搜索"
+        },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/icon/my-off.png",
+        "selectedIconPath": "images/icon/my-on.png",
+        "text": "个人主页"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}
+
