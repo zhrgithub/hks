@@ -26,14 +26,37 @@ page{
 .card-addr{
   font-size: 16px;
   color:#333;
-  padding-bottom: 20rpx;
-  border-bottom: 1rpx solid #ddd;
-  margin: 20rpx 0;
+  padding-bottom: 8rpx;
+  margin: 20rpx 0rpx;
+  display: flex;
 }
-
-.card-read{
-  font-size: 14px;
-  color: #666;
+.addr-img{
+  width: 45rpx;
+  height: 45rpx;
+}
+.shopImg{
+  width: 100%;
+  height: 200rpx;
+  padding-left:12rpx;
+  padding-bottom: 3rpx;
+  align-items:center;
   
 }
-
+.shopsInfo{
+     position: relative;
+     width: 350px;
+     height: 100%;
+    }
+.shopTitle{
+    position: absolute;
+    width: 400rpx;
+    bottom: 6px;
+    left: 180px;
+    font-size: 18px;
+    color: black;
+}
+.ell{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -47,8 +47,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "商品查找",
+					"id": 1,
+					"name": "商品店铺展示",
 					"pathName": "pages/storeInfo/storeInfo",
 					"query": "",
 					"scene": null

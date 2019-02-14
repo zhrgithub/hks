@@ -1,8 +1,14 @@
 <view class='card'>
-    <image class='card-img' src='https://p0.meituan.net/waimaipoi/2b71869f7e52a78ab2c5d2a48b891749156532.jpg'></image>
+    <image class='card-img'src="{{imgUrl}}"></image>
     <text class='borderLarge-store'></text>
-    <text class='card-title '>麻辣E族木桶饭</text>
+    <text class='card-title '>{{title}}</text>
     <text class='border-store'></text>
-    <text class='card-addr'>呵呵哒</text>
-    <text class='card-read arrow'>查看详情</text>
+    <view class='card-addr'>
+    <image class='addr-img' src="/images/icon/weizhi.png"></image>{{addr}}     </view>
+    
+    
+    <view class='shopsInfo' wx:for="{{shopList}}">
+      <image   class='shopImg' src='{{item.shopListurl}}'></image>
+      <text class='shopTitle ell'>{{item.shopTitle}}</text>
+    </view>
 </view>
